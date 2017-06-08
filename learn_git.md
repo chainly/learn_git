@@ -25,7 +25,20 @@
     git commit -m 'add learn_git.md'
     git push -u origin master
 
-## info
+### info
+    git status
+    git diff `${file}`
+    git log
+    git reflog
+### [reset](https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt) 
+    git reset {sha1/HEAD~/HEAD^100}
+| options |    how   |   what for|
+|:--------|:--------:|----------:|
+|--soft   |This leaves all your changed files "Changes to be committed"|打多个版本的PATCH|
+|--mixed  |the changed files are preserved but not marked for commit(default action)|重新提交|
+|--hard   |Any changes to tracked files in the working tree since <commit> are discarded|完全恢复到某版本|
+|--merge  |Resets the index and updates the files in the working tree that are different between <commit> and HEAD and keep unstaged changes|恢复至某版本，并保留未提交的(检测有没有修改冲突)|
+|--keep   |HARD and If a file that is different between <commit> and HEAD has local changes, reset is aborted|HARD&&检测有没有修改冲突|
 
 
 [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000
