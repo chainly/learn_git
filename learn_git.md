@@ -54,7 +54,15 @@
     git branch -d dev
 #### list
     git branch
-   
+#### push 
+- create if remote not exists
+    git push origin/<分支> dev
+#### pull
+- if remote exists 
+    git branch --set-upstream-to=origin/<分支> dev
+    git pull 
+    # or
+    git fetch
 
 
 
