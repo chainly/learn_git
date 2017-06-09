@@ -1,1 +1,1 @@
-# add (docs)[https://chainly.github.io/learn_git/]
+# add [doc](https://chainly.github.io/learn_git/)
