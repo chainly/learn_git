@@ -50,20 +50,25 @@
     git checkout -b dev
 #### merge
     git merge dev 
+#### [merge remote branch](https://stackoverflow.com/a/1710474/6493535)
+    git fetch origin dev
+    git merge origin/dev
+    # if conflicts
+    # fix and commit and run again
+    
 #### delete
     git branch -d dev
 #### list
     git branch
 #### push 
 - create if remote not exists
-    git push origin/<分支> dev
+    git push -u origin/<分支> dev
 #### pull
 - if remote exists 
     git branch --set-upstream-to=origin/<分支> dev
-    git pull 
+    git pull
     # or
     git fetch
-
 
 
 
