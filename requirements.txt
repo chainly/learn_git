@@ -12,3 +12,4 @@ chardet
 django_redis
 pyftpdlib
 psutil
+pytest==3.0.6
