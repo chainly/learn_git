@@ -1,0 +1,15 @@
+django==1.10.3
+#librabbitmq
+pyrabbit
+djangorestframework
+celery>=4.0,<5.0
+xlrd
+redis
+netifaces
+six
+rsa
+chardet
+django_redis
+pyftpdlib
+psutil
+pytest==3.0.6
