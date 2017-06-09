@@ -41,4 +41,22 @@
 |--keep   |HARD and If a file that is different between <commit> and HEAD has local changes, reset is aborted|HARD&&检测有没有修改冲突|
 
 
+### branch
+#### create
+    git branch test ${commit}
+#### switch
+    git checkout master
+#### create && switch
+    git checkout -b dev
+#### merge
+    git merge dev 
+#### delete
+    git branch -d dev
+#### list
+    git branch
+   
+
+
+
+
 [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000
