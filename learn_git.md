@@ -74,6 +74,13 @@
     # or
     git fetch
 
-
+### tag
+    git checkout -b tags
+    git push -u origin tags
+    git tag tags_version
+    git tag
+    git push origin tags_version|--tags
+    git tag -d tags_version
+    
 
 [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000
