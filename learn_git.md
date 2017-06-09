@@ -50,7 +50,7 @@
     git checkout -b dev
 #### merge
     git merge dev 
-#### [merge remote branch](https://stackoverflow.com/a/1710474/6493535)
+#### merge remote branch ==> update_local,push_remote
     # sync dev
     git fetch origin dev
     git pull origin/dev
