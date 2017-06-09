@@ -51,20 +51,24 @@
 #### merge
     git merge dev 
 #### [merge remote branch](https://stackoverflow.com/a/1710474/6493535)
+    # sync dev
     git fetch origin dev
-    git merge origin/dev
+    git pull origin/dev
     # if conflicts
-    # fix and commit and run again
-    
+    # fix and commit
+    # merge dev to master
+    git checkout master
+    git merge dev
+    git push
 #### delete
     git branch -d dev
 #### list
     git branch
 #### push 
-- create if remote not exists
+    # create if remote not exists
     git push -u origin/<分支> dev
 #### pull
-- if remote exists 
+    # if remote exists 
     git branch --set-upstream-to=origin/<分支> dev
     git pull
     # or
