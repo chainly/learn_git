@@ -83,6 +83,7 @@
     git pull --no-edit
     git stash pop stash@{0}
     # fetch
+    # see how to deal with conflict
     git fetch
 
 ### tag
