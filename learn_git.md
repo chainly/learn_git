@@ -73,6 +73,8 @@
     git pull
     # or
     git fetch
+    # update
+    git config --global core.mergeoptions --no-edit
 
 ### tag
     git checkout -b tags
