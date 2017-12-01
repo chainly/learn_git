@@ -74,9 +74,14 @@
     # or
     git fetch
     # update
+    # 无效X
     # git config --global core.mergeoptions --no-edit
-    # 无效
+    # 将会新加mergeX
+    git pull --no-edit
+    # stash
+    git stash
     git pull --no-edit
+    git stash pop stash@{0}
 
 ### tag
     git checkout -b tags
