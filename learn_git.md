@@ -78,10 +78,12 @@
     # git config --global core.mergeoptions --no-edit
     # 将会新加mergeX
     git pull --no-edit
-    # stash
-    git stash
+    # stashX before commit
+    git stash
     git pull --no-edit
     git stash pop stash@{0}
+    # fetch
+    git fetch
 
 ### tag
     git checkout -b tags
