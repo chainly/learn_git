@@ -74,7 +74,9 @@
     # or
     git fetch
     # update
-    git config --global core.mergeoptions --no-edit
+    # git config --global core.mergeoptions --no-edit
+    # 无效
+    git pull --no-edit
 
 ### tag
     git checkout -b tags
