@@ -68,25 +68,26 @@
     # create if remote not exists
     git push -u origin/<分支> dev
 #### pull
+```
+  ~~# if remote exists
+    git branch --set-upstream-to=origin/<分支> dev
+    git pull
+    # o
+    git fetch
+    # update
+    # 无效X
+    # git config --global core.mergeoptions --no-edit
+    # 将会新加mergeX
+    git pull --no-edit
+    # stashX before commit
+    git stash
+    git pull --no-edit
+    git stash pop stash@{0}
+    # fetch
+    # see how to deal with conflict
+    git fetch~~
+```
 
-~~# if remote exists 
-git branch --set-upstream-to=origin/<分支> dev
-git pull
-# or
-git fetch
-# update
-# 无效X
-# git config --global core.mergeoptions --no-edit
-# 将会新加mergeX
-git pull --no-edit
-# stashX before commit
-git stash
-git pull --no-edit
-git stash pop stash@{0}
-# fetch
-# see how to deal with conflict
-git fetch~~
-    
     git pull -ff-only origin develop
     # conflict
     ## local changed
