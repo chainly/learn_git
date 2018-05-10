@@ -31,7 +31,9 @@
     git log
     git reflog
 ### [reset](https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt) 
-    git reset {sha1/HEAD~/HEAD^100}
+> git reset {sha1/HEAD~/HEAD^100}  
+> usually when pull required after commit, use `git reset --soft HEAD^`
+    
 | options |    how   |   what for|
 |:--------|:--------:|----------:|
 |--soft   |This leaves all your changed files "Changes to be committed"|打多个版本的PATCH|
