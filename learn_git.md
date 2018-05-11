@@ -15,6 +15,7 @@
 ### ssh
 > about ssh.pub ref: ssh_config(5)
 ### whoami
+    # remove `--global`, to set this repo only
     git config --global user.email "1258626769qq.com"
     git config --global user.name "chainly"
 ### clone
@@ -63,9 +64,18 @@
     git merge dev
     git push
 #### delete
+    # delete remote
+    git branch -r -d  origin/patch-2
+    git push origin :patch-2
+    # then checkout other branch, 
+    # delete local
     git branch -d dev
+
 #### list
+    # local
     git branch
+    # remote
+    git branch -r
 #### push 
     # create if remote not exists
     git push -u origin/<分支> dev
