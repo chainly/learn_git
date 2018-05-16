@@ -117,6 +117,19 @@
     git tag
     git push origin tags_version|--tags
     git tag -d tags_version
+ 
+### repush(rollback && commit)
+    # https://blog.csdn.net/fuchaosz/article/details/52170105
+    # 1. new commit to overwrite ~= new commit
+    # pass
+    # 2. rollback
+    # rollback local
+    git reset --soft HEAD^
+    # recommit
+    git commit -m "xxx"
+    # push -f
+    git push -f
+    # tell others or if you in you own branch
     
 
 [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000
