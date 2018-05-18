@@ -130,6 +130,26 @@
     # push -f
     git push -f
     # tell others or if you in you own branch
+ 
+### [merging-an-upstream-repository-into-your-fork](https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/)
+    # if not conflict
+    # local master
+    git pull https://github.com/scrapy/scrapy.git master
+    git push
+    git checkout patch-2
+    git reset HEAD^
+    git stash
+    git pull --ff-only origin master
+    git stash pop
+    git commit -m "add item_error to be catchable"
+    git push -f
+    
+    # if conflict, just merge
+    # local patch-2
+    git pull https://github.com/scrapy/scrapy.git master
+    # solve and commit and push
+
+    
     
 
 [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000
